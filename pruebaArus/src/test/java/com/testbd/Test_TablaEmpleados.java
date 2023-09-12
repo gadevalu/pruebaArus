@@ -29,7 +29,7 @@ public class Test_TablaEmpleados {
 
     @Test
     public void testCrearEmpleado() {
-        // Código para crear un registro en la tabla
+        // Código para crear un registro en la tabla empleados
         try {
             String insertQuery = "INSERT INTO empleado (Nombre, Apellido, id_departamento, salario) VALUES (?, ?, ?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
@@ -45,7 +45,7 @@ public class Test_TablaEmpleados {
 
     @Test
     public void testLeerEmpleado() {
-        // Código para leer un registro de la tabla
+        // Código para leer un registro de la tabla empleados
         try {
             String selectQuery = "SELECT * FROM empleado WHERE Nombre = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
@@ -65,7 +65,7 @@ public class Test_TablaEmpleados {
 
     @Test
     public void testActualizarEmpleado() {
-        // Código para actualizar un registro en la tabla
+        // Código para actualizar un registro en la tabla empleados
         try {
             String updateQuery = "UPDATE empleado SET Nombre = ?, Apellido = ?, id_departamento= ?, salario= ? WHERE idEmpleado = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
@@ -82,7 +82,7 @@ public class Test_TablaEmpleados {
 
     @Test
     public void testEliminarEmpleado() {
-        // Código para eliminar un registro de la tabla
+        // Código para eliminar un registro de la tabla empleados
         try {
             String deleteQuery = "DELETE FROM empleado WHERE idEmpleado = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(deleteQuery);

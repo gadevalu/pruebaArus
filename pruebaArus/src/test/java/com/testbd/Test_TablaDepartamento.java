@@ -29,7 +29,7 @@ public class Test_TablaDepartamento {
 
     @Test
     public void testCrearDepartamento() {
-        // Código para crear un registro en la tabla
+        // Código para crear un registro en la tabla departamento
         try {
             String insertQuery = "INSERT INTO departamento (Nombre, Ubicacion) VALUES (?, ?)";
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
@@ -43,7 +43,7 @@ public class Test_TablaDepartamento {
 
     @Test
     public void testLeerDepartamento() {
-        // Código para leer un registro de la tabla
+        // Código para leer un registro de la tabla departamento
         try {
             String selectQuery = "SELECT * FROM departamento WHERE Nombre = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(selectQuery);
@@ -61,7 +61,7 @@ public class Test_TablaDepartamento {
 
     @Test
     public void testActualizarDepartamento() {
-        // Código para actualizar un registro en la tabla
+        // Código para actualizar un registro en la tabla departamento
         try {
             String updateQuery = "UPDATE departamento SET Nombre = ? WHERE iddepartamento = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
@@ -75,7 +75,7 @@ public class Test_TablaDepartamento {
 
     @Test
     public void testEliminarDepartamento() {
-        // Código para eliminar un registro de la tabla
+        // Código para eliminar un registro de la tabla departamento
         try {
             String deleteQuery = "DELETE FROM departamento WHERE iddepartamento = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(deleteQuery);

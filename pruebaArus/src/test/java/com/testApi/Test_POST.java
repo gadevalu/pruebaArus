@@ -14,7 +14,6 @@ public class Test_POST {
 	
 	 @BeforeAll
 	    public static void setup() {
-	        // Configura la URL base de la API
 	        RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 	    }
 
@@ -34,8 +33,6 @@ public class Test_POST {
 
 	        System.out.println("Estado de la respuesta: " + statusCode);
 	        System.out.println("Datos de la respuesta: \n" + responseBody);
-
-	        // Aquí puedes agregar más verificaciones según tus necesidades
 	    }
 
 

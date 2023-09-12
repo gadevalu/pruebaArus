@@ -12,8 +12,7 @@ public class Test_GET {
 
 	 @BeforeAll
 	    public static void setup() {
-	        // Configura la URL base de la API
-	        RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
+	          RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
 	    }
 
 	    @Test
